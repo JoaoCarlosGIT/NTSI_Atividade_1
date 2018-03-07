@@ -2,33 +2,33 @@
 
 int main()
 {
-    int a, b, c, aux;
+    int pontoa, pontob, pontoc, x;
 
     printf("Digite três numeros naturais: \n");
     printf("Valor A: ");
-    scanf("%d", &a);
+    scanf("%d", &pontoa);
     printf("Valor B: ");
-    scanf("%d", &b);
+    scanf("%d", &pontob);
     printf("Valor C: ");
-    scanf("%d", &c);
+    scanf("%d", &pontoc);
 
-    if (b > a)
+    if (pontob > pontoa)
     {
-        aux = a;
-        a = b;
-        b = aux;
+        x = pontoa;
+        pontoa = pontob;
+        pontob = x;
     }
-    if (c > a)
+    if (pontoc > pontoa)
     {
-        aux = a;
-        a = c;
-        c = aux;
+        x = pontoa;
+        pontoa = pontoc;
+        pontoc = x;
     }
 
-    if (a * a == b * b + c * c)
-        printf("O triangulo é retangulo\n");
+    if (pontoa * pontoa == pontob * pontob + pontoc * pontoc)
+        printf("O triangulo é retangulo! \n");
     else
-        printf("O triangulo não é retangulo\n");
+        printf("O triangulo não é retangulo! \n");
 
     return 0;
 }
