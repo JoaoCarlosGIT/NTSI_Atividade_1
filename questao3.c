@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a, b, c, x;
+    int a, b, c, aux;
 
     printf("Digite três numeros naturais: \n");
     printf("Valor A: ");
@@ -14,15 +14,15 @@ int main()
 
     if (b > a)
     {
-        x = a;
+        aux = a;
         a = b;
-        b = x;
+        b = aux;
     }
     if (c > a)
     {
-        x = a;
+        aux = a;
         a = c;
-        c = x;
+        c = aux;
     }
 
     if (a * a == b * b + c * c)
