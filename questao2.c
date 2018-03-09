@@ -3,17 +3,17 @@
 
 int main()
 {
-    int n;
-    int r;
-    int i;
+    int n1;
+    int aux1;
+    int aux2;
 
     printf("Digite um número Inteiro: ");
-    scanf("%d", &n);
+    scanf("%d", &n1);
 
-    for (i = 31; i >= 0; i--)
+    for (aux2 = 31; aux2 >= 0; aux2--)
     {
-        r = n >> i;
-        if (r & 1)
+        aux1 = n1 >> aux2;
+        if (aux1 & 1)
         {
             printf("1");
         }
