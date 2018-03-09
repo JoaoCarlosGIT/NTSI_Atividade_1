@@ -11,7 +11,7 @@ int main(){
     printf("Digite o último número: ");
     scanf("%d", &n2);
 
-    for(aux=n1; aux<=n2; aux++){
+    for(aux = n1; aux <= n2; aux++){
         if((aux % 2) == 0 & (aux % 3) == 0){
             printf("%d \n", aux);
         }
