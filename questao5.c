@@ -2,14 +2,15 @@
 
 int main(void)
 {
-    int contaDigitos = 0, valor;
+    int contaDigitos = 0; 
+    int numero;
     printf("Digite um Número: ");
-    scanf("%d", &valor);
+    scanf("%d", &numero);
     do
     {
         contaDigitos = contaDigitos + 1;
-        valor = valor / 10;
-    } while (valor != 0);
+        numero = numero / 10;
+    } while (numero != 0);
     printf("Número de Dígitos: %d\n", contaDigitos);
     return 0;
 }
